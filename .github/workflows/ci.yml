@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  zig:
+    uses: nullclaw/nullbuilder/.github/workflows/zig-ci.yml@v1
+    permissions:
+      contents: read
+    with:
+      binary_name: nllclw
+      artifact_prefix: nllclw
+      zig_version: "0.16.0"
+      test_command: bash .github/scripts/ci.sh

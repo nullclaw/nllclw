@@ -1,0 +1,22 @@
+name: Release
+
+on:
+  push:
+    tags: ["v20*"]
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  release:
+    uses: nullclaw/nullbuilder/.github/workflows/zig-release.yml@v1
+    permissions:
+      contents: write
+      packages: write
+    with:
+      binary_name: nllclw
+      artifact_prefix: nllclw
+      zig_version: "0.16.0"
+      source_archive: true
+      publish_docker: true
