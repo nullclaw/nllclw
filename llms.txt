@@ -1,0 +1,23 @@
+# nllclw
+
+> Run a local-first AI assistant in about 1 MB of dependency-free Zig, with OpenAI-compatible providers, six channels and capability-gated tools.
+
+Part of the Null ecosystem (https://nullmenu.ai) — single-binary Zig tools for running AI agents on your own hardware. All components are pre-1.0 with CalVer releases. The links below point to canonical documentation pages.
+
+## Start
+
+- [Install](https://clw.nullmenu.ai/docs/start/install/): Release binary, build from source, or container image.
+- [Quickstart](https://clw.nullmenu.ai/docs/start/quickstart/): From setup wizard to first conversation in five commands.
+
+## Guides
+
+- [Channels](https://clw.nullmenu.ai/docs/guides/channels/): CLI, REPL, Telegram, WebSocket, heartbeat and daemon — one runtime, six doors.
+- [Tools and memory](https://clw.nullmenu.ai/docs/guides/tools-and-memory/): The capability-gated tool loop and the two local memory stores.
+
+## Reference
+
+- [Configuration](https://clw.nullmenu.ai/docs/reference/configuration/): Source order, config.json rules, and every NLLCLW_* key.
+
+## Source
+
+- [GitHub](https://github.com/nullclaw/nllclw)
